@@ -593,14 +593,31 @@ svg {
   }
 
   .l-horizontal-orange {
-    background: url("../images/orange-horizontal.svg") no-repeat right center / 1000px auto;
+    background: url("../images/orange-horizontal.svg") no-repeat left center / 1000px auto;
     align-items: stretch;
     background-size: 480px 4px;
   }
 
   .psychic-box, .precise-box, .intuitive-box, .rational-box, .sound-box, .logical-box, .creative-box, .music-box, .impulsive-box, .realistic-box, .emotional-box, .planner-box {
     display: none;
+    transition: all 200ms ease-in;
   }
+
+  @keyframes line-grow {
+  0% {
+    transform: scale(0);
+  }
+  33% {
+    transform: scale(120px);
+  }
+  66% {
+    transform: scale(240px);
+  }
+  100% {
+    transform: scale(480px);
+  }
+}
+
 
 }
 
