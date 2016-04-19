@@ -35,6 +35,16 @@ svg {
 
 #header-brains {
   width: 100%;
+  animation: pulse 1s linear infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .header-brains0 {
@@ -79,6 +89,12 @@ svg {
   border: solid 3px #000;
   border-radius: 10px;
   text-align: center;
+  transform: scale(1)
+}
+
+.info-box:hover {
+  transform: scale(1.01);
+  border: solid 4px #000;
 }
 
 .info-box-top-0 {
@@ -88,6 +104,12 @@ svg {
   border: solid 3px #000;
   border-radius: 10px;
   text-align: center;
+  transform: scale(1)
+}
+
+.info-box-top-0:hover {
+  transform: scale(1.01);
+  border: solid 4px #000;
 }
 
 .info-box-bottom-0 {
@@ -97,6 +119,12 @@ svg {
   border: solid 3px #000;
   border-radius: 10px;
   text-align: center;
+  transform: scale(1)
+}
+
+.info-box-bottom-0:hover {
+  transform: scale(1.01);
+  border: solid 4px #000;
 }
 
 .info-box-0 {
@@ -106,6 +134,12 @@ svg {
   border: solid 3px #000;
   border-radius: 10px;
   text-align: center;
+  transform: scale(1)
+}
+
+.info-box-0:hover {
+  transform: scale(1.01);
+  border: solid 4px #000;
 }
 
 .lb-box {
@@ -116,7 +150,15 @@ svg {
   border-radius: 10px;
   text-align: center;
   color: #004a41;
+  transform: scale(1)
 }
+
+/*
+.lb-box:hover {
+  transform: scale(1.01);
+  border: solid 4px #004a41;
+}
+*/
 
 .lb-box-top-0 {
   margin: 0 0.5em 0.5em 1em;
@@ -126,7 +168,15 @@ svg {
   border-radius: 10px;
   text-align: center;
   color: #004a41;
+  transform: scale(1)
 }
+
+/*
+.lb-box-top-0:hover {
+  transform: scale(1.01);
+  border: solid 4px #004a41;
+}
+*/
 
 .rb-box {
   margin: 0.5em 1em 0.5em 0.5em;
@@ -136,7 +186,15 @@ svg {
   border-radius: 10px;
   text-align: center;
   color: #b54d15;
+  transform: scale(1)
 }
+
+/*
+.rb-box:hover {
+  transform: scale(1.01);
+  border: solid 4px #b54d15;
+}
+*/
 
 .rb-box-top-0 {
   margin: 0 1em 0.5em 0.5em;
@@ -146,7 +204,15 @@ svg {
   border-radius: 10px;
   text-align: center;
   color: #b54d15;
+  transform: scale(1)
 }
+
+/*
+.rb-box-top-0:hover {
+  transform: scale(1.01);
+  border: solid 4px #b54d15;
+}
+*/
 
 /** BRAIN ICONS **/
 
@@ -523,6 +589,25 @@ svg {
   stroke: none;
 }
 
+#planner, #emotional, #realistic, #impulsive, #critic, #logical, #sound, #rational, #intuitive, #precise, #psychic, #creative {
+  animation: pulse 1s linear infinite alternate;
+  transform: scale(1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#planner:hover, #emotional:hover, #realistic:hover, #impulsive:hover, #critic:hover, #logical:hover, #sound:hover, #rational:hover, #intuitive:hover, #precise:hover, #psychic:hover, #creative:hover {
+  transform: scale(1.01);
+}
+
+
 /** BARS **/
 
 .xs-vertical {
@@ -587,41 +672,66 @@ svg {
     background: url("../images/orange-vertical.svg") repeat-y 25% top / 5px auto, url("../images/orange-vertical.svg") repeat-y 75% top / 5px auto;
   }
 
-  .l-horizontal-blue {
+  .l-horizontal-blue-planner, .l-horizontal-blue-realistic, .l-horizontal-blue-critic, .l-horizontal-blue-logical, .l-horizontal-blue-rational, .l-horizontal-blue-precise {
     background: url("../images/blue-horizontal.svg") no-repeat right center / 1000px auto;
-    background-size: 480px 4px;
+    align-items: stretch;
+    background-size: 0px 4px;
   }
 
-  .l-horizontal-orange {
+  .l-horizontal-orange-emotional, .l-horizontal-orange-impulsive, .l-horizontal-orange-creative, .l-horizontal-orange-sound, .l-horizontal-orange-intuitive, .l-horizontal-orange-psychic {
     background: url("../images/orange-horizontal.svg") no-repeat left center / 1000px auto;
     align-items: stretch;
+    background-size: 0px 4px;
+  }
+
+  .grow {
     background-size: 480px 4px;
+    animation: background-size 1000ms ease-out;
   }
 
-  .psychic-box, .precise-box, .intuitive-box, .rational-box, .sound-box, .logical-box, .creative-box, .music-box, .impulsive-box, .realistic-box, .emotional-box, .planner-box {
+  @keyframes background-size {
+    0% {
+      background-size: 0px 4px;
+    }
+    15% {
+      background-size: 0px 4px;
+    }
+    16% {
+      background-size: 240px 4px;
+    }
+    100% {
+      background-size: 480px 4px;
+    }
+  }
+
+  .psychic-box, .precise-box, .intuitive-box, .rational-box, .sound-box, .logical-box, .creative-box, .critic-box, .impulsive-box, .realistic-box, .emotional-box, .planner-box {
     display: none;
-    transition: all 200ms ease-in;
   }
 
-  @keyframes line-grow {
+    .show {
+    display: inline-block;
+    animation:
+      fade 1750ms ease-in;
+  }
+
+  @keyframes fade {
   0% {
-    transform: scale(0);
+    opacity: 0;
+   }
+  46% {
+    opacity: 0;
   }
-  33% {
-    transform: scale(120px);
-  }
-  66% {
-    transform: scale(240px);
-  }
+  47% {
+    opacity: 6;
+   }
   100% {
-    transform: scale(480px);
+    opacity: 10;
+   }
   }
-}
-
 
 }
 
-@media only screen and (min-width: 6020em) {
+@media only screen and (min-width: 90em) {
 
   .xl-vertical {
     background: url("../images/blue-vertical.svg") repeat-y 25% top / 5px auto, url("../images/orange-vertical.svg") repeat-y 75% top / 5px auto;
@@ -647,12 +757,12 @@ svg {
     background: url("../images/orange-vertical.svg") repeat-y 25% top / 5px auto, url("../images/orange-vertical.svg") repeat-y 75% top / 5px auto;
   }
 
-  .xl-horizontal-blue {
-    background: url("../images/blue-horizontal.svg") no-repeat right center / 1000px auto;
+  .xl-horizontal-blue-planner, .xl-horizontal-blue-realistic, .xl-horizontal-blue-critic, .xl-horizontal-blue-logical, .xl-horizontal-blue-rational, .xl-horizontal-blue-precise {
+    background: url("../images/blue-horizontal.svg") no-repeat left center / 1000px auto;
     background-size: 480px 4px;
   }
 
-  .xl-horizontal-orange {
+  .xl-horizontal-orange-emotional, .xl-horizontal-orange-impulsive, .xl-horizontal-orange-creative, .xl-horizontal-orange-sound, .xl-horizontal-orange-intuitive, .xl-horizontal-orange-psychic {
     background: url("../images/orange-horizontal.svg") no-repeat right center / 1000px auto;
     background-size: 480px 4px;
   }
