@@ -655,56 +655,28 @@ svg {
   .l-horizontal-blue-planner, .l-horizontal-blue-realistic, .l-horizontal-blue-critic, .l-horizontal-blue-logical, .l-horizontal-blue-rational, .l-horizontal-blue-precise {
     background: url("../images/blue-horizontal.svg") no-repeat right center / 1000px auto;
     align-items: stretch;
-    background-size: 0px 4px;
+    background-size: 200px 4px;
+    transition: background-size 500ms ease-out;
   }
 
   .l-horizontal-orange-emotional, .l-horizontal-orange-impulsive, .l-horizontal-orange-creative, .l-horizontal-orange-sound, .l-horizontal-orange-intuitive, .l-horizontal-orange-psychic {
     background: url("../images/orange-horizontal.svg") no-repeat left center / 1000px auto;
     align-items: stretch;
-    background-size: 0px 4px;
+    background-size: 200px 4px;
+    transition: background-size 500ms ease-out;
   }
 
   .grow {
-    background-size: 480px 4px;
-    animation: background-size 1000ms ease-out;
+    background-size: 600px 4px;
   }
 
-  @keyframes background-size {
-    0% {
-      background-size: 0px 4px;
-    }
-    15% {
-      background-size: 0px 4px;
-    }
-    16% {
-      background-size: 240px 4px;
-    }
-    100% {
-      background-size: 480px 4px;
-    }
-
   .psychic-box, .precise-box, .intuitive-box, .rational-box, .sound-box, .logical-box, .creative-box, .critic-box, .impulsive-box, .realistic-box, .emotional-box, .planner-box {
-    display: none;
+    opacity: 0;
+    transition: opacity 25ms ease-in 420ms;
   }
 
   .show {
-    display: inline-block;
-    animation: fade 1750ms ease-in;
-  }
-
-  @keyframes fade {
-    0% {
-      opacity: 0;
-     }
-    46% {
-      opacity: 0;
-    }
-    47% {
-      opacity: 6;
-    }
-    100% {
-      opacity: 10;
-    }
+    opacity: 1;
   }
 
   .lbBox1, .lbBox2, .lbBox3, .lbBox4, .lbBox5, .lbBox6 {
@@ -730,6 +702,8 @@ svg {
     100% {
       transform: rotate(0);
     }
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -761,55 +735,52 @@ svg {
   .xl-horizontal-blue-planner, .xl-horizontal-blue-realistic, .xl-horizontal-blue-critic, .xl-horizontal-blue-logical, .xl-horizontal-blue-rational, .xl-horizontal-blue-precise {
     background: url("../images/blue-horizontal.svg") no-repeat right center / 1000px auto;
     align-items: stretch;
-    background-size: 0px 4px;
+    background-size: 200px 4px;
   }
 
   .xl-horizontal-orange-emotional, .xl-horizontal-orange-impulsive, .xl-horizontal-orange-creative, .xl-horizontal-orange-sound, .xl-horizontal-orange-intuitive, .xl-horizontal-orange-psychic {
     background: url("../images/orange-horizontal.svg") no-repeat left center / 1000px auto;
     align-items: stretch;
-    background-size: 0px 4px;
+    background-size: 200px 4px;
   }
 
   .grow {
-    background-size: 480px 4px;
-    animation: background-size 1000ms ease-out;
-  }
-
-  @keyframes background-size {
-    0% {
-      background-size: 0px 4px;
-    }
-    15% {
-      background-size: 0px 4px;
-    }
-    16% {
-      background-size: 240px 4px;
-    }
-    100% {
-      background-size: 480px 4px;
-    }
+    background-size: 800px 4px;
   }
 
   .psychic-box, .precise-box, .intuitive-box, .rational-box, .sound-box, .logical-box, .creative-box, .critic-box, .impulsive-box, .realistic-box, .emotional-box, .planner-box {
-    display: none;
+    margin-top: 6em;
+    opacity: 0;
+    transition: opacity 25ms ease-in 420ms;
   }
 
   .show {
-    display: inline-block;
-    animation: fade 1750ms ease-in;
+    opacity: 1;
   }
 
-  @keyframes fade {
+  .lbBox1, .lbBox2, .lbBox3, .lbBox4, .lbBox5, .lbBox6 {
+    opacity: 0;
+    transition: all 200ms ease-in;
+  }
+
+  .js-svg-animate {
+    opacity: 1;
+    animation: svg-jiggle 250ms linear;
+  }
+
+  @keyframes svg-jiggle {
     0% {
-      opacity: 0;
+      transform: rotate(0);
     }
-    46% {
-      opacity: 0;
+    33% {
+      transform: rotate(15deg);
     }
-    47% {
-      opacity: 6;
+    66% {
+      transform: rotate(-15deg);
     }
     100% {
-      opacity: 10;
+      transform: rotate(0);
     }
+  }
+
 }

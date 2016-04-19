@@ -1,32 +1,32 @@
-var $hOrangeEmotional = $('.l-horizontal-orange-emotional');
+var $hOrangeEmotional = $('.l-horizontal-orange-emotional, .xl-horizontal-orange-emotional');
 var $emotional = $('#emotional');
 var $emotionalBox = $('.emotional-box');
 
-var $hOrangeImpulsive = $('.l-horizontal-orange-impulsive');
+var $hOrangeImpulsive = $('.l-horizontal-orange-impulsive, .xl-horizontal-orange-impulsive');
 var $impulsive = $('#impulsive');
 var $impulsiveBox = $('.impulsive-box');
 
-var $hOrangeCreative = $('.l-horizontal-orange-creative');
+var $hOrangeCreative = $('.l-horizontal-orange-creative, .xl-horizontal-orange-creative');
 var $creative = $('#creative');
 var $creativeBox = $('.creative-box');
 
-var $hOrangeSound = $('.l-horizontal-orange-sound');
+var $hOrangeSound = $('.l-horizontal-orange-sound, .xl-horizontal-orange-sound');
 var $sound = $('#sound');
 var $soundBox = $('.sound-box');
 
-var $hOrangeIntuitive = $('.l-horizontal-orange-intuitive');
+var $hOrangeIntuitive = $('.l-horizontal-orange-intuitive, .xl-horizontal-orange-intuitive');
 var $intuitive = $('#intuitive');
 var $intuitiveBox = $('.intuitive-box');
 
-var $hOrangePsychic = $('.l-horizontal-orange-psychic');
+var $hOrangePsychic = $('.l-horizontal-orange-psychic, .xl-horizontal-orange-psychic');
 var $psychic = $('#psychic');
 var $psychicBox = $('.psychic-box');
 
-var $hBluePlanner = $('.l-horizontal-blue-planner');
+var $hBluePlanner = $('.l-horizontal-blue-planner, .xl-horizontal-blue-planner');
 var $planner = $('#planner');
 var $plannerBox = $('.planner-box');
 
-var $hBlueRealistic = $('.l-horizontal-blue-realistic');
+var $hBlueRealistic = $('.l-horizontal-blue-realistic, .xl-horizontal-blue-realistic');
 var $realistic = $('#realistic');
 var $realisticBox = $('.realistic-box');
 
@@ -61,63 +61,123 @@ var $rbBox5 = $('.rb-box-5');
 var $rbBox6 = $('.rb-box-6');
 
 $emotional.on('click', function () {
-  $hOrangeEmotional.toggleClass('grow');
-  $emotionalBox.toggleClass('show');
+  if ($hOrangeEmotional.hasClass('grow')){
+    $hOrangeEmotional.removeClass('grow').css('transition-delay', '100ms');
+    $emotionalBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hOrangeEmotional.css('transition-delay', '0ms').addClass('grow');
+    $emotionalBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $impulsive.on('click', function () {
-  $hOrangeImpulsive.toggleClass('grow');
-  $impulsiveBox.toggleClass('show');
+  if ($hOrangeImpulsive.hasClass('grow')){
+    $hOrangeImpulsive.removeClass('grow').css('transition-delay', '100ms');
+    $impulsiveBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hOrangeImpulsive.css('transition-delay', '0ms').addClass('grow');
+    $impulsiveBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $creative.on('click', function () {
-  $hOrangeCreative.toggleClass('grow');
-  $creativeBox.toggleClass('show');
+  if ($hOrangeCreative.hasClass('grow')){
+    $hOrangeCreative.removeClass('grow').css('transition-delay', '100ms');
+    $creativeBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hOrangeCreative.css('transition-delay', '0ms').addClass('grow');
+    $creativeBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $sound.on('click', function () {
-  $hOrangeSound.toggleClass('grow');
-  $soundBox.toggleClass('show');
+  if ($hOrangeSound.hasClass('grow')){
+    $hOrangeSound.removeClass('grow').css('transition-delay', '100ms');
+    $soundBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hOrangeSound.css('transition-delay', '0ms').addClass('grow');
+    $soundBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $intuitive.on('click', function () {
-  $hOrangeIntuitive.toggleClass('grow');
-  $intuitiveBox.toggleClass('show');
+  if ($hOrangeIntuitive.hasClass('grow')){
+    $hOrangeIntuitive.removeClass('grow').css('transition-delay', '100ms');
+    $intuitiveBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hOrangeIntuitive.css('transition-delay', '0ms').addClass('grow');
+    $intuitiveBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $psychic.on('click', function () {
-  $hOrangePsychic.toggleClass('grow');
-  $psychicBox.toggleClass('show');
+  if ($hOrangePsychic.hasClass('grow')){
+    $hOrangePsychic.removeClass('grow').css('transition-delay', '100ms');
+    $psychicBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hOrangePsychic.css('transition-delay', '0ms').addClass('grow');
+    $psychicBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $planner.on('click', function () {
-  $hBluePlanner.toggleClass('grow');
-  $plannerBox.toggleClass('show');
+  if ($hBluePlanner.hasClass('grow')){
+    $hBluePlanner.removeClass('grow').css('transition-delay', '100ms');
+    $plannerBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hBluePlanner.css('transition-delay', '0ms').addClass('grow');
+    $plannerBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $realistic.on('click', function () {
-  $hBlueRealistic.toggleClass('grow');
-  $realisticBox.toggleClass('show');
+  if ($hBlueRealistic.hasClass('grow')){
+    $hBlueRealistic.removeClass('grow').css('transition-delay', '100ms');
+    $realisticBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hBlueRealistic.css('transition-delay', '0ms').addClass('grow');
+    $realisticBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $critic.on('click', function () {
-  $hBlueCritic.toggleClass('grow');
-  $criticBox.toggleClass('show');
+  if ($hBlueCritic.hasClass('grow')){
+    $hBlueCritic.removeClass('grow').css('transition-delay', '100ms');
+    $criticBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hBlueCritic.css('transition-delay', '0ms').addClass('grow');
+    $criticBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $logical.on('click', function () {
-  $hBlueLogical.toggleClass('grow');
-  $logicalBox.toggleClass('show');
+  if ($hBlueLogical.hasClass('grow')){
+    $hBlueLogical.removeClass('grow').css('transition-delay', '100ms');
+    $logicalBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hBlueLogical.css('transition-delay', '0ms').addClass('grow');
+    $logicalBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $rational.on('click', function () {
-  $hBlueRational.toggleClass('grow');
-  $rationalBox.toggleClass('show');
+  if ($hBlueRational.hasClass('grow')){
+    $hBlueRational.removeClass('grow').css('transition-delay', '100ms');
+    $rationalBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hBlueRational.css('transition-delay', '0ms').addClass('grow');
+    $rationalBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $precise.on('click', function () {
-  $hBluePrecise.toggleClass('grow');
-  $preciseBox.toggleClass('show');
+  if ($hBluePrecise.hasClass('grow')){
+    $hBluePrecise.removeClass('grow').css('transition-delay', '100ms');
+    $preciseBox.removeClass('show').css('transition-delay', '0ms');
+  } else {
+    $hBluePrecise.css('transition-delay', '0ms').addClass('grow');
+    $preciseBox.css('transition-delay', '420ms').addClass('show');
+  }
 });
 
 $lbBox1.waypoint(function (direction) {
