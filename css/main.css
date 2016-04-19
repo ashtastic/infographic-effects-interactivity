@@ -109,7 +109,6 @@ svg {
 
 .info-box-top-0:hover {
   transform: scale(1.01);
-  border: solid 4px #000;
 }
 
 .info-box-bottom-0 {
@@ -124,7 +123,6 @@ svg {
 
 .info-box-bottom-0:hover {
   transform: scale(1.01);
-  border: solid 4px #000;
 }
 
 .info-box-0 {
@@ -139,7 +137,6 @@ svg {
 
 .info-box-0:hover {
   transform: scale(1.01);
-  border: solid 4px #000;
 }
 
 .lb-box {
@@ -153,12 +150,9 @@ svg {
   transform: scale(1)
 }
 
-/*
 .lb-box:hover {
   transform: scale(1.01);
-  border: solid 4px #004a41;
 }
-*/
 
 .lb-box-top-0 {
   margin: 0 0.5em 0.5em 1em;
@@ -171,12 +165,9 @@ svg {
   transform: scale(1)
 }
 
-/*
 .lb-box-top-0:hover {
   transform: scale(1.01);
-  border: solid 4px #004a41;
 }
-*/
 
 .rb-box {
   margin: 0.5em 1em 0.5em 0.5em;
@@ -189,12 +180,9 @@ svg {
   transform: scale(1)
 }
 
-/*
 .rb-box:hover {
   transform: scale(1.01);
-  border: solid 4px #b54d15;
 }
-*/
 
 .rb-box-top-0 {
   margin: 0 1em 0.5em 0.5em;
@@ -207,12 +195,9 @@ svg {
   transform: scale(1)
 }
 
-/*
 .rb-box-top-0:hover {
   transform: scale(1.01);
-  border: solid 4px #b54d15;
 }
-*/
 
 /** BRAIN ICONS **/
 
@@ -603,11 +588,6 @@ svg {
   }
 }
 
-#planner:hover, #emotional:hover, #realistic:hover, #impulsive:hover, #critic:hover, #logical:hover, #sound:hover, #rational:hover, #intuitive:hover, #precise:hover, #psychic:hover, #creative:hover {
-  transform: scale(1.01);
-}
-
-
 /** BARS **/
 
 .xs-vertical {
@@ -708,27 +688,50 @@ svg {
     display: none;
   }
 
-    .show {
+  .show {
     display: inline-block;
-    animation:
-      fade 1750ms ease-in;
+    animation: fade 1750ms ease-in;
   }
 
   @keyframes fade {
-  0% {
-    opacity: 0;
-   }
-  46% {
-    opacity: 0;
-  }
-  47% {
-    opacity: 6;
-   }
-  100% {
-    opacity: 10;
-   }
+    0% {
+      opacity: 0;
+     }
+    46% {
+      opacity: 0;
+    }
+    47% {
+      opacity: 6;
+    }
+    100% {
+      opacity: 10;
+    }
   }
 
+  .lbBox1, .lbBox2, .lbBox3, .lbBox4, .lbBox5, .lbBox6 {
+    opacity: 0;
+    transition: all 200ms ease-in;
+  }
+
+  .js-svg-animate {
+    opacity: 1;
+    animation: svg-jiggle 250ms linear;
+  }
+
+  @keyframes svg-jiggle {
+    0% {
+      transform: rotate(0);
+    }
+    33% {
+      transform: rotate(15deg);
+    }
+    66% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
 }
 
 @media only screen and (min-width: 90em) {
@@ -758,13 +761,59 @@ svg {
   }
 
   .xl-horizontal-blue-planner, .xl-horizontal-blue-realistic, .xl-horizontal-blue-critic, .xl-horizontal-blue-logical, .xl-horizontal-blue-rational, .xl-horizontal-blue-precise {
-    background: url("../images/blue-horizontal.svg") no-repeat left center / 1000px auto;
-    background-size: 480px 4px;
+    background: url("../images/blue-horizontal.svg") no-repeat right center / 1000px auto;
+    align-items: stretch;
+    background-size: 0px 4px;
   }
 
   .xl-horizontal-orange-emotional, .xl-horizontal-orange-impulsive, .xl-horizontal-orange-creative, .xl-horizontal-orange-sound, .xl-horizontal-orange-intuitive, .xl-horizontal-orange-psychic {
-    background: url("../images/orange-horizontal.svg") no-repeat right center / 1000px auto;
+    background: url("../images/orange-horizontal.svg") no-repeat left center / 1000px auto;
+    align-items: stretch;
+    background-size: 0px 4px;
+  }
+
+  .grow {
     background-size: 480px 4px;
+    animation: background-size 1000ms ease-out;
+  }
+
+  @keyframes background-size {
+    0% {
+      background-size: 0px 4px;
+    }
+    15% {
+      background-size: 0px 4px;
+    }
+    16% {
+      background-size: 240px 4px;
+    }
+    100% {
+      background-size: 480px 4px;
+    }
+  }
+
+  .psychic-box, .precise-box, .intuitive-box, .rational-box, .sound-box, .logical-box, .creative-box, .critic-box, .impulsive-box, .realistic-box, .emotional-box, .planner-box {
+    display: none;
+  }
+
+  .show {
+    display: inline-block;
+    animation: fade 1750ms ease-in;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    46% {
+      opacity: 0;
+    }
+    47% {
+      opacity: 6;
+    }
+    100% {
+      opacity: 10;
+    }
   }
 
 }
