@@ -61,14 +61,8 @@ var $rbBox5 = $('.rb-box-5');
 var $rbBox6 = $('.rb-box-6');
 
 $emotional.on('click', function () {
-  if (this) {
-    $hOrangeEmotional.toggleClass('grow');
-    $emotionalBox.toggleClass('show');
-  } else {
-    $hOrangeEmotional.toggleClass('shrink');
-    $emotionalBox.toggleClass('hide');
-  }
-
+  $hOrangeEmotional.toggleClass('grow');
+  $emotionalBox.toggleClass('show');
 });
 
 $impulsive.on('click', function () {
@@ -132,7 +126,7 @@ $lbBox1.waypoint(function (direction) {
   } else {
     $lbBox1.removeClass('js-svg-animate');
   }
-}, { offset: '75%'});
+}, {offset: '75%'});
 
 $lbBox2.waypoint(function (direction) {
   if (direction == 'down') {
@@ -140,7 +134,7 @@ $lbBox2.waypoint(function (direction) {
   } else {
     $lbBox2.removeClass('js-svg-animate');
   }
-}, { offset: '70%'});
+}, {offset: '70%'});
 
 $lbBox3.waypoint(function (direction) {
   if (direction == 'down') {
@@ -148,7 +142,7 @@ $lbBox3.waypoint(function (direction) {
   } else {
     $lbBox3.removeClass('js-svg-animate');
   }
-}, { offset: '65%'});
+}, {offset: '65%'});
 
 $lbBox4.waypoint(function (direction) {
   if (direction == 'down') {
@@ -156,7 +150,7 @@ $lbBox4.waypoint(function (direction) {
   } else {
     $lbBox4.removeClass('js-svg-animate');
   }
-}, { offset: '73%'});
+}, {offset: '73%'});
 
 $lbBox5.waypoint(function (direction) {
   if (direction == 'down') {
@@ -164,7 +158,7 @@ $lbBox5.waypoint(function (direction) {
   } else {
     $lbBox5.removeClass('js-svg-animate');
   }
-}, { offset: '68%'});
+}, {offset: '68%'});
 
 $lbBox6.waypoint(function (direction) {
   if (direction == 'down') {
@@ -172,7 +166,7 @@ $lbBox6.waypoint(function (direction) {
   } else {
     $lbBox6.removeClass('js-svg-animate');
   }
-}, { offset: '63%'});
+}, {offset: '63%'});
 
 $rbBox1.waypoint(function (direction) {
   if (direction == 'down') {
@@ -180,7 +174,7 @@ $rbBox1.waypoint(function (direction) {
   } else {
     $rbBox1.removeClass('js-svg-animate');
   }
-}, { offset: '63%'});
+}, {offset: '63%'});
 
 $rbBox2.waypoint(function (direction) {
   if (direction == 'down') {
@@ -188,7 +182,7 @@ $rbBox2.waypoint(function (direction) {
   } else {
     $rbBox2.removeClass('js-svg-animate');
   }
-}, { offset: '68%'});
+}, {offset: '68%'});
 
 $rbBox3.waypoint(function (direction) {
   if (direction == 'down') {
@@ -196,7 +190,7 @@ $rbBox3.waypoint(function (direction) {
   } else {
     $rbBox3.removeClass('js-svg-animate');
   }
-}, { offset: '73%'});
+}, {offset: '73%'});
 
 $rbBox4.waypoint(function (direction) {
   if (direction == 'down') {
@@ -204,7 +198,7 @@ $rbBox4.waypoint(function (direction) {
   } else {
     $rbBox4.removeClass('js-svg-animate');
   }
-}, { offset: '65%'});
+}, {offset: '65%'});
 
 $rbBox5.waypoint(function (direction) {
   if (direction == 'down') {
@@ -212,7 +206,7 @@ $rbBox5.waypoint(function (direction) {
   } else {
     $rbBox5.removeClass('js-svg-animate');
   }
-}, { offset: '70%'});
+}, {offset: '70%'});
 
 $rbBox6.waypoint(function (direction) {
   if (direction == 'down') {
@@ -220,4 +214,4 @@ $rbBox6.waypoint(function (direction) {
   } else {
     $rbBox6.removeClass('js-svg-animate');
   }
-}, { offset: '75%'});
+}, {offset: '75%'});
