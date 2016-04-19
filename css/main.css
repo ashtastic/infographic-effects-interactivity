@@ -682,7 +682,6 @@ svg {
     100% {
       background-size: 480px 4px;
     }
-  }
 
   .psychic-box, .precise-box, .intuitive-box, .rational-box, .sound-box, .logical-box, .creative-box, .critic-box, .impulsive-box, .realistic-box, .emotional-box, .planner-box {
     display: none;
@@ -731,7 +730,6 @@ svg {
     100% {
       transform: rotate(0);
     }
-  }
 }
 
 @media only screen and (min-width: 90em) {
@@ -814,6 +812,4 @@ svg {
     100% {
       opacity: 10;
     }
-  }
-
 }
