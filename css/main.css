@@ -39,9 +39,11 @@ svg {
 }
 
 @keyframes pulse {
+
   0% {
     transform: scale(.95);
   }
+
   100% {
     transform: scale(1);
   }
@@ -89,12 +91,11 @@ svg {
   border: solid 3px #000;
   border-radius: 10px;
   text-align: center;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .info-box:hover {
   transform: scale(1.01);
-  border: solid 4px #000;
 }
 
 .info-box-top-0 {
@@ -104,7 +105,7 @@ svg {
   border: solid 3px #000;
   border-radius: 10px;
   text-align: center;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .info-box-top-0:hover {
@@ -118,7 +119,7 @@ svg {
   border: solid 3px #000;
   border-radius: 10px;
   text-align: center;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .info-box-bottom-0:hover {
@@ -132,7 +133,7 @@ svg {
   border: solid 3px #000;
   border-radius: 10px;
   text-align: center;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .info-box-0:hover {
@@ -147,7 +148,7 @@ svg {
   border-radius: 10px;
   text-align: center;
   color: #004a41;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .lb-box:hover {
@@ -162,7 +163,7 @@ svg {
   border-radius: 10px;
   text-align: center;
   color: #004a41;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .lb-box-top-0:hover {
@@ -177,7 +178,7 @@ svg {
   border-radius: 10px;
   text-align: center;
   color: #b54d15;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .rb-box:hover {
@@ -192,7 +193,7 @@ svg {
   border-radius: 10px;
   text-align: center;
   color: #b54d15;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 .rb-box-top-0:hover {
@@ -580,9 +581,11 @@ svg {
 }
 
 @keyframes pulse {
+
   0% {
     transform: scale(.97);
   }
+
   100% {
     transform: scale(1);
   }
@@ -689,21 +692,25 @@ svg {
     animation: svg-jiggle 250ms linear;
   }
 
-  @keyframes svg-jiggle {
-    0% {
-      transform: rotate(0);
-    }
-    33% {
-      transform: rotate(15deg);
-    }
-    66% {
-      transform: rotate(-15deg);
-    }
-    100% {
-      transform: rotate(0);
-    }
+}
+
+@keyframes svg-jiggle {
+
+  0% {
+    transform: rotate(0);
   }
 
+  33% {
+    transform: rotate(15deg);
+  }
+
+  66% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 @media only screen and (min-width: 90em) {
@@ -765,22 +772,26 @@ svg {
 
   .js-svg-animate {
     opacity: 1;
-    animation: svg-jiggle 250ms linear;
+    animation: svg-jiggle1 250ms linear;
   }
 
-  @keyframes svg-jiggle {
-    0% {
-      transform: rotate(0);
-    }
-    33% {
-      transform: rotate(15deg);
-    }
-    66% {
-      transform: rotate(-15deg);
-    }
-    100% {
-      transform: rotate(0);
-    }
+}
+
+@keyframes svg-jiggle1 {
+
+  0% {
+    transform: rotate(0);
   }
 
+  33% {
+    transform: rotate(15deg);
+  }
+
+  66% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }

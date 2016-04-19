@@ -61,7 +61,7 @@ var $rbBox5 = $('.rb-box-5');
 var $rbBox6 = $('.rb-box-6');
 
 $emotional.on('click', function () {
-  if ($hOrangeEmotional.hasClass('grow')){
+  if ($hOrangeEmotional.hasClass('grow')) {
     $hOrangeEmotional.removeClass('grow').css('transition-delay', '100ms');
     $emotionalBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -71,7 +71,7 @@ $emotional.on('click', function () {
 });
 
 $impulsive.on('click', function () {
-  if ($hOrangeImpulsive.hasClass('grow')){
+  if ($hOrangeImpulsive.hasClass('grow')) {
     $hOrangeImpulsive.removeClass('grow').css('transition-delay', '100ms');
     $impulsiveBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -81,7 +81,7 @@ $impulsive.on('click', function () {
 });
 
 $creative.on('click', function () {
-  if ($hOrangeCreative.hasClass('grow')){
+  if ($hOrangeCreative.hasClass('grow')) {
     $hOrangeCreative.removeClass('grow').css('transition-delay', '100ms');
     $creativeBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -91,7 +91,7 @@ $creative.on('click', function () {
 });
 
 $sound.on('click', function () {
-  if ($hOrangeSound.hasClass('grow')){
+  if ($hOrangeSound.hasClass('grow')) {
     $hOrangeSound.removeClass('grow').css('transition-delay', '100ms');
     $soundBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -101,7 +101,7 @@ $sound.on('click', function () {
 });
 
 $intuitive.on('click', function () {
-  if ($hOrangeIntuitive.hasClass('grow')){
+  if ($hOrangeIntuitive.hasClass('grow')) {
     $hOrangeIntuitive.removeClass('grow').css('transition-delay', '100ms');
     $intuitiveBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -111,7 +111,7 @@ $intuitive.on('click', function () {
 });
 
 $psychic.on('click', function () {
-  if ($hOrangePsychic.hasClass('grow')){
+  if ($hOrangePsychic.hasClass('grow')) {
     $hOrangePsychic.removeClass('grow').css('transition-delay', '100ms');
     $psychicBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -121,7 +121,7 @@ $psychic.on('click', function () {
 });
 
 $planner.on('click', function () {
-  if ($hBluePlanner.hasClass('grow')){
+  if ($hBluePlanner.hasClass('grow')) {
     $hBluePlanner.removeClass('grow').css('transition-delay', '100ms');
     $plannerBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -131,7 +131,7 @@ $planner.on('click', function () {
 });
 
 $realistic.on('click', function () {
-  if ($hBlueRealistic.hasClass('grow')){
+  if ($hBlueRealistic.hasClass('grow')) {
     $hBlueRealistic.removeClass('grow').css('transition-delay', '100ms');
     $realisticBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -141,7 +141,7 @@ $realistic.on('click', function () {
 });
 
 $critic.on('click', function () {
-  if ($hBlueCritic.hasClass('grow')){
+  if ($hBlueCritic.hasClass('grow')) {
     $hBlueCritic.removeClass('grow').css('transition-delay', '100ms');
     $criticBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -151,7 +151,7 @@ $critic.on('click', function () {
 });
 
 $logical.on('click', function () {
-  if ($hBlueLogical.hasClass('grow')){
+  if ($hBlueLogical.hasClass('grow')) {
     $hBlueLogical.removeClass('grow').css('transition-delay', '100ms');
     $logicalBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -161,7 +161,7 @@ $logical.on('click', function () {
 });
 
 $rational.on('click', function () {
-  if ($hBlueRational.hasClass('grow')){
+  if ($hBlueRational.hasClass('grow')) {
     $hBlueRational.removeClass('grow').css('transition-delay', '100ms');
     $rationalBox.removeClass('show').css('transition-delay', '0ms');
   } else {
@@ -171,7 +171,7 @@ $rational.on('click', function () {
 });
 
 $precise.on('click', function () {
-  if ($hBluePrecise.hasClass('grow')){
+  if ($hBluePrecise.hasClass('grow')) {
     $hBluePrecise.removeClass('grow').css('transition-delay', '100ms');
     $preciseBox.removeClass('show').css('transition-delay', '0ms');
   } else {
