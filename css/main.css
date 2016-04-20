@@ -678,6 +678,10 @@ svg {
     transition: opacity 25ms ease-in 420ms;
   }
 
+  .planner-box, .emotional-box {
+    margin-top: 2em;
+  }
+
   .show {
     opacity: 1;
   }
@@ -756,7 +760,7 @@ svg {
   }
 
   .psychic-box, .precise-box, .intuitive-box, .rational-box, .sound-box, .logical-box, .creative-box, .critic-box, .impulsive-box, .realistic-box, .emotional-box, .planner-box {
-    margin-top: 6em;
+    margin-top: 4em;
     opacity: 0;
     transition: opacity 25ms ease-in 420ms;
   }
